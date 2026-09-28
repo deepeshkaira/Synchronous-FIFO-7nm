@@ -1,0 +1,24 @@
+# FIFO supply intent: 0.7 V. The currently available ASAP7 RVT/TT
+# standard-cell libraries characterized at 0.7 V, 25 C.
+
+create_power_domain PD_2 -include_scope
+
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+
+create_supply_net VDD_n -domain PD_2
+create_supply_net VSS_n -domain PD_2
+
+connect_supply_net VDD_n -ports {VDD}
+connect_supply_net VSS_n -ports {VSS}
+
+create_supply_set SS_FIFO -function {power VDD_n} -function {ground VSS_n}
+
+associate_supply_set SS_FIFO -handle PD_2.primary
+
+add_port_state VDD -state {VDD_ON 0.7}
+add_port_state VSS -state {VSS_ON 0.0}
+
+add_power_state -supply SS_FIFO \
+    -state {FIFO_ON \
+        -supply_expr {power == {FULL_ON 0.7} && ground == {FULL_ON 0.0}}}

@@ -1,0 +1,37 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : sync_fifo
+Version: W-2024.09-SP5-5
+Date   : Mon Sep 28 16:32:51 2026
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+sync_fifo                             8.92e-06 3.48e-06 6.93e-08 1.25e-05 100.0
+  clk_gate_fifo_mem_reg_6_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_2)
+                                      4.39e-08 3.02e-08 3.11e-10 7.44e-08   0.6
+  clk_gate_fifo_empty_o_reg (SNPS_CLOCK_GATE_HIGH_sync_fifo_0)
+                                      1.02e-07 3.59e-08 3.21e-10 1.38e-07   1.1
+  clk_gate_fifo_mem_reg_7_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_1)
+                                      4.30e-08 2.81e-08 3.11e-10 7.14e-08   0.6
+  clk_gate_fifo_mem_reg_0_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_8)
+                                      4.30e-08 2.83e-08 3.11e-10 7.16e-08   0.6
+  clk_gate_fifo_mem_reg_1_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_7)
+                                      4.26e-08 2.74e-08 3.11e-10 7.03e-08   0.6
+  clk_gate_fifo_mem_reg_2_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_6)
+                                      4.13e-08 2.39e-08 3.11e-10 6.56e-08   0.5
+  clk_gate_fifo_mem_reg_3_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_5)
+                                      4.08e-08 2.26e-08 3.10e-10 6.38e-08   0.5
+  clk_gate_fifo_mem_reg_4_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_4)
+                                      4.60e-08 3.57e-08 3.11e-10 8.20e-08   0.7
+  clk_gate_write_pointer_reg (SNPS_CLOCK_GATE_HIGH_sync_fifo_10)
+                                      9.49e-08 3.92e-08 3.19e-10 1.34e-07   1.1
+  clk_gate_read_data_q_reg (SNPS_CLOCK_GATE_HIGH_sync_fifo_9)
+                                      9.44e-08 2.64e-07 3.19e-10 3.59e-07   2.9
+  clk_gate_fifo_mem_reg_5_ (SNPS_CLOCK_GATE_HIGH_sync_fifo_3)
+                                      4.50e-08 3.31e-08 3.11e-10 7.84e-08   0.6
+1

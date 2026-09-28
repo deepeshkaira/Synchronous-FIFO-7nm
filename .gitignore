@@ -1,0 +1,20 @@
+# Vendor libraries and compiled tool databases
+*.db
+*.ddc
+*.sldb
+*.lib
+*.lib.gz
+
+# Simulation activity and generated working data
+*.saif
+*.vcd
+*.wlf
+*.fsdb
+work/
+work_*/
+alib*/
+*.svf
+transcript
+__pycache__/
+.DS_Store
+Thumbs.db

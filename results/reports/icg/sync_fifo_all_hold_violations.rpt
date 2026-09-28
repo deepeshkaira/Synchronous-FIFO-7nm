@@ -1,0 +1,1194 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-slack_lesser_than 0.00
+	-max_paths 300
+	-sort_by slack
+Design : sync_fifo
+Version: W-2024.09-SP5-5
+Date   : Mon Sep 28 16:32:51 2026
+****************************************
+
+
+  Startpoint: fifo_mem_reg_2__22_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_22_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__22_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__22_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U410/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U414/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_22_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_22_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__21_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_21_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__21_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__21_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U405/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U409/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_21_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_21_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__20_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_20_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__20_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__20_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U400/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U404/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_20_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_20_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__19_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_19_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__19_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__19_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U395/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U399/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_19_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_19_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__18_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_18_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__18_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__18_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U390/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U394/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_18_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_18_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__17_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_17_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__17_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__17_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U385/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U389/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_17_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_17_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__16_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_16_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__16_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__16_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U380/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U384/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_16_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_16_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__15_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_15_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__15_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__15_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U375/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U379/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_15_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_15_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__14_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_14_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__14_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__14_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U370/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U374/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_14_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_14_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__13_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_13_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__13_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__13_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U365/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U369/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_13_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_13_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__12_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_12_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__12_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__12_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U360/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U364/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_12_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_12_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__11_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_11_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__11_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__11_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U355/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U359/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_11_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_11_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__10_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_10_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__10_/CLK (DFFHQNx1_ASAP7_75t_R)          0.00       0.00 r
+  fifo_mem_reg_2__10_/QN (DFFHQNx1_ASAP7_75t_R)          46.31      46.31 r
+  U350/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U354/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_10_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_10_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__9_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_9_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__9_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__9_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U345/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U349/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_9_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_9_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__8_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_8_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__8_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__8_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U340/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U344/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_8_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_8_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__7_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_7_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__7_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__7_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U335/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U339/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_7_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_7_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__6_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_6_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__6_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__6_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U330/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U334/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_6_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_6_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__5_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_5_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__5_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__5_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U325/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U329/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_5_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_5_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__4_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_4_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__4_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__4_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U320/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U324/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_4_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_4_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__3_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__3_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U315/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U319/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_3_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__2_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__2_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U310/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U314/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_2_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__1_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__1_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U305/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U309/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_1_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_1_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: fifo_mem_reg_2__0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_data_q_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_mem_reg_2__0_/CLK (DFFHQNx1_ASAP7_75t_R)           0.00       0.00 r
+  fifo_mem_reg_2__0_/QN (DFFHQNx1_ASAP7_75t_R)           46.31      46.31 r
+  U298/Y (AOI22xp33_ASAP7_75t_R)                          9.95      56.26 f
+  U304/Y (NAND4xp25_ASAP7_75t_R)                         10.34      66.60 r
+  read_data_q_reg_0_/D (ASYNC_DFFHx1_ASAP7_75t_R)         0.00      66.60 r
+  data arrival time                                                 66.60
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_data_q_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                  0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       1.77     101.77
+  data required time                                               101.77
+  ------------------------------------------------------------------------------
+  data required time                                               101.77
+  data arrival time                                                -66.60
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -35.17
+
+
+  Startpoint: write_pointer_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: write_pointer_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_0_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     55.49      55.49 r
+  U277/Y (OAI21xp33_ASAP7_75t_R)                         16.13      71.62 f
+  write_pointer_reg_0_/D (ASYNC_DFFHx1_ASAP7_75t_R)       0.00      71.62 f
+  data arrival time                                                 71.62
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       5.86     105.86
+  data required time                                               105.86
+  ------------------------------------------------------------------------------
+  data required time                                               105.86
+  data arrival time                                                -71.62
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -34.24
+
+
+  Startpoint: write_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: write_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_3_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     55.94      55.94 r
+  U280/SN (HAxp5_ASAP7_75t_R)                            17.67      73.61 f
+  write_pointer_reg_3_/D (ASYNC_DFFHx1_ASAP7_75t_R)       0.00      73.61 f
+  data arrival time                                                 73.61
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       6.78     106.78
+  data required time                                               106.78
+  ------------------------------------------------------------------------------
+  data required time                                               106.78
+  data arrival time                                                -73.61
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -33.17
+
+
+  Startpoint: read_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)      0.00       0.00 r
+  read_pointer_reg_3_/QN (ASYNC_DFFHx1_ASAP7_75t_R)      55.94      55.94 r
+  U278/SN (HAxp5_ASAP7_75t_R)                            18.72      74.66 f
+  read_pointer_reg_3_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      74.66 f
+  data arrival time                                                 74.66
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       6.49     106.49
+  data required time                                               106.49
+  ------------------------------------------------------------------------------
+  data required time                                               106.49
+  data arrival time                                                -74.66
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -31.83
+
+
+  Startpoint: write_pointer_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: write_pointer_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_1_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_1_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     59.74      59.74 r
+  U271/Y (OAI21xp33_ASAP7_75t_R)                         17.64      77.38 f
+  write_pointer_reg_1_/D (ASYNC_DFFHx1_ASAP7_75t_R)       0.00      77.38 f
+  data arrival time                                                 77.38
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_1_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       6.62     106.62
+  data required time                                               106.62
+  ------------------------------------------------------------------------------
+  data required time                                               106.62
+  data arrival time                                                -77.38
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -29.24
+
+
+  Startpoint: read_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)      0.00       0.00 r
+  read_pointer_reg_2_/QN (ASYNC_DFFHx1_ASAP7_75t_R)      62.83      62.83 r
+  U267/Y (AOI21xp33_ASAP7_75t_R)                         22.76      85.58 f
+  read_pointer_reg_2_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      85.58 f
+  data arrival time                                                 85.58
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       6.42     106.42
+  data required time                                               106.42
+  ------------------------------------------------------------------------------
+  data required time                                               106.42
+  data arrival time                                                -85.58
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.83
+
+
+  Startpoint: read_pointer_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_pointer_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)      0.00       0.00 r
+  read_pointer_reg_0_/QN (ASYNC_DFFHx1_ASAP7_75t_R)      63.67      63.67 r
+  U274/Y (AOI21xp33_ASAP7_75t_R)                         23.18      86.85 f
+  read_pointer_reg_0_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00      86.85 f
+  data arrival time                                                 86.85
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       6.78     106.78
+  data required time                                               106.78
+  ------------------------------------------------------------------------------
+  data required time                                               106.78
+  data arrival time                                                -86.85
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -19.93
+
+
+  Startpoint: write_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_fifo_mem_reg_6_/latch
+               (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_2_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     59.03      59.03 r
+  U291/Y (NOR3xp33_ASAP7_75t_R)                          10.22      69.25 f
+  clk_gate_fifo_mem_reg_6_/latch/ENA (ICGx1_ASAP7_75t_R)
+                                                          0.00      69.25 f
+  data arrival time                                                 69.25
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_gate_fifo_mem_reg_6_/latch/CLK (ICGx1_ASAP7_75t_R)             0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  clock gating hold time                                -16.24      83.76
+  data required time                                                83.76
+  ------------------------------------------------------------------------------
+  data required time                                                83.76
+  data arrival time                                                -69.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -14.51
+
+
+  Startpoint: write_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_fifo_mem_reg_4_/latch
+               (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_2_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     59.03      59.03 r
+  U293/Y (NOR3xp33_ASAP7_75t_R)                          10.22      69.25 f
+  clk_gate_fifo_mem_reg_4_/latch/ENA (ICGx1_ASAP7_75t_R)
+                                                          0.00      69.25 f
+  data arrival time                                                 69.25
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_gate_fifo_mem_reg_4_/latch/CLK (ICGx1_ASAP7_75t_R)             0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  clock gating hold time                                -16.24      83.76
+  data required time                                                83.76
+  ------------------------------------------------------------------------------
+  data required time                                                83.76
+  data arrival time                                                -69.25
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -14.51
+
+
+  Startpoint: write_pointer_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_fifo_mem_reg_2_/latch
+               (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_1_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_1_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     59.74      59.74 r
+  U294/Y (NOR3xp33_ASAP7_75t_R)                          10.37      70.11 f
+  clk_gate_fifo_mem_reg_2_/latch/ENA (ICGx1_ASAP7_75t_R)
+                                                          0.00      70.11 f
+  data arrival time                                                 70.11
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_gate_fifo_mem_reg_2_/latch/CLK (ICGx1_ASAP7_75t_R)             0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  clock gating hold time                                -16.28      83.72
+  data required time                                                83.72
+  ------------------------------------------------------------------------------
+  data required time                                                83.72
+  data arrival time                                                -70.11
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -13.61
+
+
+  Startpoint: write_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_fifo_mem_reg_5_/latch
+               (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_2_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     57.02      57.02 f
+  U292/Y (NOR2xp33_ASAP7_75t_R)                          13.57      70.59 r
+  clk_gate_fifo_mem_reg_5_/latch/ENA (ICGx1_ASAP7_75t_R)
+                                                          0.00      70.59 r
+  data arrival time                                                 70.59
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_gate_fifo_mem_reg_5_/latch/CLK (ICGx1_ASAP7_75t_R)             0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  clock gating hold time                                -18.59      81.41
+  data required time                                                81.41
+  ------------------------------------------------------------------------------
+  data required time                                                81.41
+  data arrival time                                                -70.59
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -10.82
+
+
+  Startpoint: write_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fifo_empty_o_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_3_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     55.94      55.94 r
+  U280/SN (HAxp5_ASAP7_75t_R)                            17.67      73.61 f
+  U288/SN (HAxp5_ASAP7_75t_R)                            14.48      88.09 r
+  U289/Y (NAND2xp33_ASAP7_75t_R)                          9.41      97.50 f
+  fifo_empty_o_reg/D (ASYNC_DFFHx1_ASAP7_75t_R)           0.00      97.50 f
+  data arrival time                                                 97.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_empty_o_reg/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                    0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       7.27     107.27
+  data required time                                               107.27
+  ------------------------------------------------------------------------------
+  data required time                                               107.27
+  data arrival time                                                -97.50
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -9.76
+
+
+  Startpoint: write_pointer_reg_3_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: fifo_full_o_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_3_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_3_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     55.94      55.94 r
+  U280/SN (HAxp5_ASAP7_75t_R)                            17.67      73.61 f
+  U288/SN (HAxp5_ASAP7_75t_R)                            14.48      88.09 r
+  U290/Y (NOR2xp33_ASAP7_75t_R)                          11.34      99.43 f
+  fifo_full_o_reg/D (ASYNC_DFFHx1_ASAP7_75t_R)            0.00      99.43 f
+  data arrival time                                                 99.43
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  fifo_full_o_reg/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                     0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       7.06     107.06
+  data required time                                               107.06
+  ------------------------------------------------------------------------------
+  data required time                                               107.06
+  data arrival time                                                -99.43
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -7.62
+
+
+  Startpoint: read_pointer_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: read_pointer_reg_1_
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_0_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)      0.00       0.00 r
+  read_pointer_reg_0_/QN (ASYNC_DFFHx1_ASAP7_75t_R)      63.67      63.67 r
+  U272/Y (NOR2xp33_ASAP7_75t_R)                          18.00      81.67 f
+  U273/Y (OA21x2_ASAP7_75t_R)                            25.96     107.63 f
+  read_pointer_reg_1_/D (ASYNC_DFFHx1_ASAP7_75t_R)        0.00     107.63 f
+  data arrival time                                                107.63
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  read_pointer_reg_1_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)                 0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  library hold time                                       8.15     108.15
+  data required time                                               108.15
+  ------------------------------------------------------------------------------
+  data required time                                               108.15
+  data arrival time                                               -107.63
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.52
+
+
+  Startpoint: write_pointer_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_fifo_mem_reg_7_/latch
+               (rising clock gating-check end-point clocked by clk)
+  Path Group: **clock_gating_default**
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  write_pointer_reg_2_/CLK (ASYNC_DFFHx1_ASAP7_75t_R)     0.00       0.00 r
+  write_pointer_reg_2_/QN (ASYNC_DFFHx1_ASAP7_75t_R)     59.03      59.03 r
+  U279/Y (NOR2xp33_ASAP7_75t_R)                          20.65      79.68 f
+  clk_gate_fifo_mem_reg_7_/latch/ENA (ICGx1_ASAP7_75t_R)
+                                                          0.00      79.68 f
+  data arrival time                                                 79.68
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clk_gate_fifo_mem_reg_7_/latch/CLK (ICGx1_ASAP7_75t_R)             0.00 r
+  clock reconvergence pessimism                           0.00       0.00
+  clock uncertainty                                     100.00     100.00
+  clock gating hold time                                -19.89      80.11
+  data required time                                                80.11
+  ------------------------------------------------------------------------------
+  data required time                                                80.11
+  data arrival time                                                -79.68
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.43
+
+
+1

@@ -1,0 +1,4 @@
+implementation,internal_uW,switching_uW,leakage_uW,total_uW,clock_network_uW,out_of_range_ramps,out_of_range_loads
+ungated,25.790,2.665,0.07795,28.54,22.740,33,23
+manual_rtl_gating,13.530,4.927,0.07626,18.54,12.180,34,27
+tool_inserted_icg,8.915,3.484,0.06930,12.47,3.879,44,207
