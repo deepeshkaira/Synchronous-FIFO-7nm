@@ -110,6 +110,16 @@ The testbench, simulation UPF and original synthesis SDC have also been added. M
 
 User-supplied waveform showing enable, read/write requests, data and status outputs. A waveform alone does not establish scoreboard pass status or activity coverage; the simulation transcript is still pending.
 
+Tools and Power Intent
+
+| Stage | Tools / inputs |
+|---|---|
+| RTL and verification | SystemVerilog, UVM, QuestaSim |
+| Synthesis and clock-gate insertion | Synopsys Design Compiler |
+| Timing and power analysis | Synopsys PrimeTime, SAIF activity, SDC constraints |
+| Technology | ASAP7 7 nm standard cells, RVT TT |
+| Simulation power intent | UPF single-domain supply at 0.7 V
+
 ## Repository layout
 
 | Directory | Intended contents |
