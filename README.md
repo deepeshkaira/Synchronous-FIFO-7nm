@@ -96,7 +96,6 @@ The mapped gates are `ICGx1_ASAP7_75t_R`. Inspected connections show separate `w
 - Internal power is energy used inside cells; net switching charges driven capacitance; leakage remains while cells are powered.
 - FIFO storage is implemented as registers, explaining the zero memory-macro power group.
 - Gated and ungated SAIF reports were captured before `update_power`; final activity propagation, especially ICG clock activity, still needs inspection.
-- Out-of-range ramp/load counts: ungated **33/23**, manual **34/27**, ICG **44/207**. These limit confidence in the comparison.
 - Area savings are not claimed: matching area reports have not been archived here.
 
 The results above are verified against the imported reports: [manual RTL](results/reports/manual_rtl/sync_fifo_power_verbose.rpt), [ICG](results/reports/icg/sync_fifo_power_verbose.rpt), and [ungated](results/reports/ungated/sync_fifo_power_verbose.rpt). The supplied RTL, four DC/PT scripts, Questa run script, exported SDCs and 27 reports are archived unchanged. [Import manifest](results/import_manifest.csv) records their original archive paths and SHA-256 hashes.
