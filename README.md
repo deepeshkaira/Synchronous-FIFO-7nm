@@ -32,8 +32,7 @@ The UVM environment contains a sequencer, driver, monitor and queue-based refere
 | Sustained wraparound | Forty simultaneous transfers at occupancy four, followed by drain and an empty-read attempt |
 | Random traffic | 200 randomized cycles varying data, enable and read/write requests, followed by drain |
 
-The test defaults to the random sequence. An extended regression selects all six sequences with `+FIFO_EXTENDED_TEST`. Questa uses seed `12345` in the supplied run script. The half-full and sustained-wraparound sequences are new additions awaiting a Questa run.
-
+The test defaults to the random sequence that covers all the random flags for proper SAIF file genration. An extended regression selects all six sequences with `+FIFO_EXTENDED_TEST`.
 
 ### Assertion Checks
 
@@ -108,7 +107,6 @@ The testbench, simulation UPF and original synthesis SDC have also been added. M
 
 ![Standalone FIFO simulation](docs/images/sync-fifo-simulation.png)
 
-User-supplied waveform showing enable, read/write requests, data and status outputs. A waveform alone does not establish scoreboard pass status or activity coverage; the simulation transcript is still pending.
 
 Tools and Power Intent
 
