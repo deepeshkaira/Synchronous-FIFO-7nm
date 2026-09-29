@@ -2,12 +2,70 @@
 
 A depth-8, 23-bit synchronous FIFO evaluated with three clock-control implementations: no clock gating, manual RTL clock gating, and synthesis-inserted integrated clock gates (ICGs).
 
-## Design and verification
+**Synthesis-inserted clock gating reduced estimated total power from 28.54 µW to 12.47 µW—a 56.3% reduction—using ASAP7 RVT TT libraries at 0.7 V and 25°C.** Design Compiler inserted 11 ICG cells, gating all 217 functional register bits.
 
-- 184 memory bits, 23 read-output bits, two 4-bit pointers, and two status flags: **217 functional register bits**.
-- Independent accepted-read and accepted-write enables, registered read output, full/empty flags, and wraparound pointer tracking.
-- SystemVerilog/UVM testbench includes active, boundary, control and random sequences. The supplied test selects the random sequence; regression transcripts are pending.
-- ASIC synthesis: Synopsys Design Compiler. Power analysis: PrimeTime/PrimePower using SAIF activity.
+## Architecture
+
+The FIFO supports independent read and write requests on a common clock, with a registered read output and synchronous full/empty status updates. A global enable pauses transactions while preserving stored data. Active-low asynchronous reset clears the pointers, status flags, and read-output register.
+
+| Parameter | Implementation |
+|---|---|
+| Depth × data width | 8 × 23 bits |
+| Storage | 184 bits implemented with flip-flops |
+| Pointer width | 4 bits: 3 address bits + 1 wrap bit |
+| Read output | Registered; holds its value between accepted reads |
+| Total functional state | 217 bits, including storage, pointers, output and flags |
+| Clock constraint | 10 ns / 100 MHz |
+
+Reads are accepted only when the FIFO contains data. Writes are accepted when space is available, including a simultaneous read/write at full occupancy: the oldest word is read and the new word replaces it without changing occupancy. At empty occupancy, a simultaneous request accepts the write and rejects the read.
+
+## Verification
+
+The UVM environment contains a sequencer, driver, monitor and queue-based reference scoreboard. The scoreboard models accepted transactions independently of the RTL pointers and checks read-data ordering, full/empty flags, and output hold behavior on every observed cycle.
+
+| Sequence | Scenarios exercised |
+|---|---|
+| Basic traffic | Fill, drain, blocked writes and simultaneous read/write |
+| Boundary conditions | Reads while empty, writes while full, replacement at full occupancy |
+| Control behavior | Global disable, repeated pointer wraparound, reset with buffered data |
+| Half-full traffic | Six rounds of half-fill, pause, partial drain, refill and simultaneous traffic |
+| Sustained wraparound | Forty simultaneous transfers at occupancy four, followed by drain and an empty-read attempt |
+| Random traffic | 200 randomized cycles varying data, enable and read/write requests, followed by drain |
+
+The test defaults to the random sequence. An extended regression selects all six sequences with `+FIFO_EXTENDED_TEST`. Questa uses seed `12345` in the supplied run script. The half-full and sustained-wraparound sequences are new additions awaiting a Questa run.
+
+
+### Assertion Checks
+
+The RTL includes 11 simulation assertions, excluded from synthesis with `translate_off/on` directives.
+
+| Check | Expected behavior |
+|---|---|
+| Write/read pointer advancement | An accepted transaction advances its pointer by one, including wraparound |
+| Write/read pointer hold | A pointer holds when its transaction is not accepted |
+| Read-output hold | Output remains stable without an accepted read |
+| Global disable | Pointers, output and flags retain their state |
+| Empty/full consistency | Flags agree with the current pointer relationships |
+| Flag exclusivity | Full and empty are never asserted together |
+| Known state | Pointers and status flags contain no X/Z after reset |
+| Asynchronous reset | Pointers and output clear; empty asserts and full clears |
+
+The assertions supplement the queue scoreboard's data-ordering checks. They are newly implemented; assertion pass results will be recorded after simulation. Existing power results predate these verification additions.
+
+Clock-Gating Comparison
+
+Three implementations were evaluated:
+
+- **Ungated:** enable-controlled RTL synthesized without clock-gating insertion.
+- **Manual RTL gating:** an earlier implementation with explicit latch-based read and write clock gates.
+- **Tool-inserted ICG:** enable-controlled RTL synthesized with `compile_ultra -gate_clock`, using the library cell `ICGx1_ASAP7_75t_R`.
+
+The current gated and ungated runs use the same FIFO RTL. In the ICG implementation, clock enables are separated into eight memory-word groups, a write-pointer group, a read-pointer/output group, and a status-flag group. This allows inactive words and registers to stop receiving clock transitions.
+
+| Synthesis result | Ungated | Tool-inserted ICG |
+|---|---:|---:|
+| Inserted clock gates | 0 | 11 |
+| Gated register bits | 0 / 217 | 217 / 217
 
 ## Reported power results
 
