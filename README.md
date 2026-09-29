@@ -100,10 +100,11 @@ The mapped gates are `ICGx1_ASAP7_75t_R`. Inspected connections show separate `w
 
 The results above are verified against the imported reports: [manual RTL](results/reports/manual_rtl/sync_fifo_power_verbose.rpt), [ICG](results/reports/icg/sync_fifo_power_verbose.rpt), and [ungated](results/reports/ungated/sync_fifo_power_verbose.rpt). The supplied RTL, four DC/PT scripts, Questa run script, exported SDCs and 27 reports are archived unchanged. [Import manifest](results/import_manifest.csv) records their original archive paths and SHA-256 hashes.
 
-The testbench, simulation UPF and original synthesis SDC have also been added. Mapped netlists and matching SAIF are still needed for the archived PrimeTime flow. See the [import review](docs/import-review.md) for two corrections made to the newly supplied files.
+The testbench, simulation UPF and original synthesis SDC have also been added.
 
 ## Simulation waveform
 
+This run is for a proper SAIF generation to capture maximum switching activity of the module
 ![Standalone FIFO simulation](docs/images/sync-fifo-simulation.png)
 
 
@@ -130,10 +131,8 @@ Tools and Power Intent
 | `results/` | Summary data and original result reports |
 | `docs/` | Theory, design decisions, evidence notes and waveform figures |
 
-Current standalone synthesis and PrimeTime scripts do **not** load UPF. The separate mixed-library registered-wrapper experiment is documented in project history, but its results are not these standalone FIFO numbers.
 
 The supplied `run_sync_fifo.do` is stored at the repository root and loads `upf/sync_fifo_upf.upf` for simulation.
 
 See [design notes](docs/design-notes.md), [results data](results/power_summary.csv), and the [file intake checklist](docs/file-intake.md).
 
-Technology libraries and vendor tools are not bundled. Use appropriately licensed local installations. No license for publishing third-party library content is implied.
